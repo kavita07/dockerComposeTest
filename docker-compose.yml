@@ -1,5 +1,6 @@
 hub:
   image: selenium/hub 
+  container_name:dockerTest
   ports:
      - "4444:4444"
 
@@ -19,3 +20,7 @@ Chrome:
 
   links:
     - hub
+    
+Execution:
+    command: git clone https://github.com/kavita07/dockerComposeTest.git
+    command: mvn clean install
