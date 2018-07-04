@@ -1,0 +1,21 @@
+hub:
+  image: selenium/hub 
+  ports:
+     - "4444:4444"
+
+Firefox:
+  image: selenium/node-firefox:3.5 
+  environment: 
+    - NODE_MAX_INSTANCES=2 
+    - NODE_MAX_SESSION=2
+  links: 
+    - hub
+
+Chrome:
+  image: selenium/node-chrome:3.5
+  environment:
+    - NODE_MAX_INSTANCES=2
+    - NODE_MAX_SESSION=2 
+
+  links:
+    - hub
