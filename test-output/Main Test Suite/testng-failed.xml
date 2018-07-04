@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Main Test Suite]">
+  <test thread-count="5" verbose="2" name="TestNG Test(failed)">
+    <classes>
+      <class name="Dockerization.practice.YourLogoTestNG">
+        <methods>
+          <include name="signInToYourLogo"/>
+        </methods>
+      </class> <!-- Dockerization.practice.YourLogoTestNG -->
+    </classes>
+  </test> <!-- TestNG Test(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->
