@@ -26,7 +26,7 @@ public class YourLogoTestNG{
 		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
+		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com/index.php");
 		WebElement signIn = driver.findElement(By.className("login"));
 		wait.until(ExpectedConditions.elementToBeClickable(signIn)).click();
